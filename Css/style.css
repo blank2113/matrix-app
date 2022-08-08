@@ -117,9 +117,10 @@ aside{
 	background: #343536;
 	backdrop-filter: blur(3px);
 	-webkit-box-shadow: -5px -5px 11px -5px rgba(0, 0, 0, 0.6) inset;
--moz-box-shadow: -5px -5px 11px -5px rgba(0, 0, 0, 0.6) inset;
-box-shadow: -5px -5px 11px -5px rgba(0, 0, 0, 0.6) inset;
--webkit-app-region: no-drag;
+	-moz-box-shadow: -5px -5px 11px -5px rgba(0, 0, 0, 0.6) inset;
+	box-shadow: -5px -5px 11px -5px rgba(0, 0, 0, 0.6) inset;
+	-webkit-app-region: no-drag;
+	height: 100vh;
 }
 aside .navbar{
 	display: flex;
@@ -216,7 +217,7 @@ main{
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: fixed;
-	
+	overflow: auto;
 	-webkit-app-region: no-drag;
 }
 
@@ -446,14 +447,15 @@ main .main-content .main-content__inner .left-side .inner .point-21{
 
 
 main .main-content .main-content__inner .left-side .destination {
-	background: url(../img/destination.png);
+	background: url(../img/Group_4-removebg-preview.png);
 	background-repeat: no-repeat;
 	background-size: 100%;
-	width: 500px;
-	height: 340px;
+	width: 350px;
+	height: 300px;
 	position: relative;
 	color: #000;
 	text-align: center;
+	margin-left: 30px;
 	
 }
 main .main-content .main-content__inner .left-side .destination .pnt-1{
@@ -653,6 +655,10 @@ main .right-side .inner h2{
 	
 }
 @media (max-width: 1024px){
+	main .main-content .main-content__inner .left-side{
+		display: flex;
+		align-items: center;
+	}
 	main .main-content .main-content__inner{
 		display: flex;
 		flex-direction: column;
