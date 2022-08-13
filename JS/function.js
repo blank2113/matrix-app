@@ -7,6 +7,9 @@ let p5 = document.querySelector('.point-5');
 const points = document.querySelectorAll("[class*=point]");
 const pnts = document.querySelectorAll('[class*=pnt]');
 const arc = document.querySelector('.arcane-info');
+const numm = document.querySelector('.overlay-num');
+const spanPlus = document.querySelector('.span-plus');
+const spanMinus = document.querySelector('.span-minu');
 
 
 const DATA = {
@@ -118,12 +121,13 @@ function insideCalc() {
 
 document.querySelector('.sub').addEventListener('click', () => {
 	// getDataJson();
+	document.querySelector('.down-title').classList.toggle('active');
+	asd();
 	calc();
 	insideCalc();
 	destCalc();
-	asd();
+	text();
 });
-
 
 // const getDataJson = async () => {
 // 	try {
@@ -144,18 +148,38 @@ const asd = async () => {
 	const req = await fetch('./exmple.json');
 	console.log(req);
 	const res = await req.json();
-	let b1 = res['ddde'];
+	let b1 = res['arcane-main'];
+	let b2 = res['plus'];
+	let b3 = res['minus'];
 	let b = +p4.innerHTML;
 	b1.forEach(function (item, i, arr) {
 		if (i == b) {
 			console.log('123');
 			arc.textContent = item;
+			numm.textContent = b;
+		}
+	});
+	b2.forEach(function (item, i, arr) {
+		if (i == b) {
+			console.log('321');
+			spanPlus.textContent = item;
+		}
+	})
+	b3.forEach(function (item, i, arr) {
+		if (i == b) {
+			console.log('321');
+			spanMinus.textContent = item;
 		}
 	})
 };
-// asd()
 
 
 // ===========================================================================
 
 
+
+document.addEventListener("click", function (e) {
+	e.target.classList.toggle('active');
+	let nextS = e.target.nextElementSibling;
+	nextS.classList.toggle('active');
+});
