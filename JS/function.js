@@ -6,8 +6,8 @@ let p5 = document.querySelector('.point-5');
 
 const points = document.querySelectorAll("[class*=point]");
 const pnts = document.querySelectorAll('[class*=pnt]');
-const arc = document.querySelector('.arcane-info');
-const numm = document.querySelector('.overlay-num');
+const aboutArc = document.querySelector('.about-span');
+const numm = document.querySelector('.numb');
 const spanPlus = document.querySelector('.span-plus');
 const spanMinus = document.querySelector('.span-minu');
 
@@ -155,7 +155,7 @@ const asd = async () => {
 	b1.forEach(function (item, i, arr) {
 		if (i == b) {
 			console.log('123');
-			arc.textContent = item;
+			aboutArc.textContent = item;
 			numm.textContent = b;
 		}
 	});

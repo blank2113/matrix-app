@@ -612,8 +612,265 @@ main .right-side .inner h2{
 .overlay__span.active{
 	max-height: 100%;
 }
+.about-span{
+	max-height: 0;
+	overflow: hidden;
+	font-size: 18px;
+	color: #e92435;
+}
+.about-span.active{
+	max-height: 100%;
+}
+.plus-span{
+	max-height: 0;
+	overflow: hidden;
+}
+
+.plus-span.active{
+	max-height: 100%;
+}
+.minus-span{
+	max-height: 0;
+	overflow: hidden;
+}
+.minus-span.active{
+	max-height: 100%;
+}
+.rework-span{
+	max-height: 0;
+	overflow: hidden;
+}
+.rework-span.active{
+	max-height: 100%;
+}
+.retual-span{
+	max-height: 0;
+	overflow: hidden;
+}
+.retual-span.active{
+	max-height: 100%;
+}
+
+.wrapper-b{
+	margin-top: 35px;
+	margin-bottom: 35px;
+}
+.wrapper-d{
+	margin-top: 35px;
+	margin-bottom: 35px;
+}
+.wrapper-f{
+	margin-top: 35px;
+	margin-bottom: 35px;
+}
+.wrapper-w{
+	margin-top: 35px;
+	margin-bottom: 35px;
+}
+.wrapper-z{
+	margin-top: 35px;
+	margin-bottom: 35px;
+}
+
+.overlay-b-span{
+	max-height: 0;
+	overflow: hidden;
+}
+.overlay-b-span.active{
+	max-height: 100%;
+}
+.wrapper-b__about-span{
+	max-height: 0;
+	overflow: hidden;
+}
+.wrapper-b__about-span.active{
+	max-height: 100%;
+}
+.wrapper-b__plus-span{
+	max-height: 0;
+	overflow: hidden;
+}
+.wrapper-b__plus-span.active{
+	max-height: 100%;
+}
+.wrapper-b__minus-span{
+	max-height: 0;
+	overflow: hidden;
+}
+.wrapper-b__minus-span.active{
+	max-height: 100%;
+}
+.wrapper-b__rework-span{
+	max-height: 0;
+	overflow: hidden;
+}
+.wrapper-b__rework-span.active{
+	max-height: 100%;
+}
+.wrapper-b__retual-span{
+	max-height: 0;
+	overflow: hidden;
+}
+.wrapper-b__retual-span.active{
+	max-height: 100%;
+}
+.overlay-c-span{
+	max-height: 0;
+	overflow: hidden;
+}
+.overlay-c-span.active{
+	max-height: 100%;
+}
+.wrapper-c__about-span{
+	max-height: 0;
+	overflow: hidden;
+}
+.wrapper-c__about-span.active{
+	max-height: 100%;
+}
+.wrapper-c__plus-span{
+	max-height: 0;
+	overflow: hidden;
+}
+.wrapper-c__plus-span.active{
+	max-height: 100%;
+}
+.wrapper-c__minus-span{
+	max-height: 0;
+	overflow: hidden;
+}
+.wrapper-c__minus-span.active{
+	max-height: 100%;
+}
+.wrapper-c__rework-span{
+	max-height: 0;
+	overflow: hidden;
+}
+.wrapper-c__rework-span.active{
+	max-height: 100%;
+}
+.wrapper-c__retual-span{
+	max-height: 0;
+	overflow: hidden;
+}
+.wrapper-c__retual-span.active{
+	max-height: 100%;
+}
+
+.overlay-d-span{
+	max-height: 0;
+	overflow: hidden;
+}
+.overlay-d-span.active{
+	max-height: 100%;
+}
+.wrapper-d__about-span{
+	max-height: 0;
+	overflow: hidden;
+}
+.wrapper-d__about-span.active{
+	max-height: 100%;
+}
+
+.wrapper-d__plus-span{
+	max-height: 0;
+	overflow: hidden;
+}
+.wrapper-d__plus-span.active{
+	max-height: 100%;
+}
+.wrapper-d__minus-span{
+	max-height: 0;
+	overflow: hidden;
+}
+.wrapper-d__minus-span.active{
+	max-height: 100%;
+}
+.wrapper-d__rework-span{
+	max-height: 0;
+	overflow: hidden;
+}
+.wrapper-d__rework-span.active{
+	max-height: 100%;
+}
+.wrapper-d__retual-span{
+	max-height: 0;
+	overflow: hidden;
+}
+.wrapper-d__retual-span.active{
+	max-height: 100%;
+}
+
+.overlay-e-span{
+	max-height: 0;
+	overflow: hidden;
+}
+.overlay-e-span.active{
+	max-height: 100%;
+}
+.wrapper-e__about-span{
+	max-height: 0;
+	overflow: hidden;
+}
+.wrapper-e__about-span.active{
+	max-height: 100%;
+}
+.wrapper-e__plus-span{
+	max-height: 0;
+	overflow: hidden;
+}
+.wrapper-e__plus-span.active{
+	max-height: 100%;
+}
+.wrapper-e__minus-span{
+	max-height: 0;
+	overflow: hidden;
+}
+.wrapper-e__minus-span.active{
+	max-height: 100%;
+}
+.wrapper-e__rework-span{
+	max-height: 0;
+	overflow: hidden;
+}
+.wrapper-e__rework-span.active{
+	max-height: 0;
+}
+.wrapper-e__retual-span{
+	max-height: 0;
+	overflow: hidden;
+}
+.wrapper-e__retual-span.active{
+	max-height: 100%;
+}
+
+.overlay-f-span{
+	max-height: 0;
+	overflow: hidden;
+}
+.overlay-f-span.active{
+	max-height: 100%;
+}
+.wrapper-f__about-span{
+	max-height: 0;
+	overflow: hidden;
+}
+.wrapper-f__about-span.active{
+	max-height: 100%;
+}
+.wrapper-f__plus-span{
+	max-height: 0;
+	overflow: hidden;
+}
+.wrapper-f__plus-span.active{
+	max-height: 100%;
+}
 
 
+
+
+
+/* =========================================================================================== */
 
 @media (max-width: 1200px){
 	main .main-content .main-content__inner .left-side .inner{
