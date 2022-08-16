@@ -119,7 +119,8 @@ function insideCalc() {
 document.querySelector('.sub').addEventListener('click', () => {
 	// getDataJson();
 	document.querySelector('.down-title').classList.toggle('active');
-	asd();
+	// asd();
+	setDatasInPosition()
 	calc();
 	insideCalc();
 	destCalc();
@@ -194,3 +195,29 @@ document.addEventListener("click", function (e) {
 	let nextS = e.target.nextElementSibling;
 	nextS.classList.toggle('active');
 });
+
+
+
+
+//  =======================================================================================
+
+
+async function setDatasInPosition() {
+	const req = await fetch('./exmple.json');
+	console.log(req);
+	const res = await req.json();
+	
+	const nodes = document.querySelectorAll("[data-related-number]");
+	nodes.forEach(node => {
+		const nodeRelatedNumber = node.dataset.relatedNumber;
+		const relatedNumberElement = document.getElementById(nodeRelatedNumber)
+		const mainContent = node.querySelector(".about-span");
+		// const plusContent = node.querySelector("");
+		// const minusContent = node.querySelector("");
+		// const reworkContent = node.querySelector("");
+		// const ritualContent = node.querySelector("");
+
+		mainContent.textContent = res[mainContent.dataset.text][+relatedNumberElement.textContent];
+
+	})
+}
