@@ -148,11 +148,11 @@ const asd = async () => {
 	const req = await fetch('./exmple.json');
 	console.log(req);
 	const res = await req.json();
-	let reflectOne = res['arcane-main'];
+	let reflectAbout = res['arcane-about'];
 	let b2 = res['plus'];
 	let b3 = res['minus'];
 	let pointForReflect = +p4.innerHTML;
-	reflectOne.forEach(function (item, i, arr) {
+	reflectAbout.forEach(function (item, i, arr) {
 		if (i == pointForReflect) {
 			console.log('123');
 			aboutArc.textContent = item;
