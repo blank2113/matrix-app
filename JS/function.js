@@ -6,10 +6,7 @@ let p5 = document.querySelector('.point-5');
 
 const points = document.querySelectorAll("[class*=point]");
 const pnts = document.querySelectorAll('[class*=pnt]');
-const aboutArc = document.querySelector('.about-span');
-const numm = document.querySelector('.numb');
-const spanPlus = document.querySelector('.span-plus');
-const spanMinus = document.querySelector('.span-minu');
+
 
 
 const DATA = {
@@ -144,13 +141,22 @@ document.querySelector('.sub').addEventListener('click', () => {
 // };
 
 // const dataJson = getDataJson();
+
+const aboutArc = document.querySelector('.about-span');
+const numm = document.querySelector('.numb');
+const spanPlus = document.querySelector('.plus-span');
+const spanMinus = document.querySelector('.minus-span');
+const reworkSpan = document.querySelector('.rework-span');
+const retualSpan = document.querySelector('.retual-span');
+
 const asd = async () => {
 	const req = await fetch('./exmple.json');
 	console.log(req);
 	const res = await req.json();
 	let reflectAbout = res['arcane-about'];
-	let b2 = res['plus'];
-	let b3 = res['minus'];
+	let reflectPlus = res['plus'];
+	let reflectMinus = res['minus'];
+	let reflectRework = res['arcane-rework'];
 	let pointForReflect = +p4.innerHTML;
 	reflectAbout.forEach(function (item, i, arr) {
 		if (i == pointForReflect) {
@@ -159,20 +165,25 @@ const asd = async () => {
 			numm.textContent = pointForReflect;
 		}
 	});
-	b2.forEach(function (item, i, arr) {
-		if (i == b) {
+	reflectPlus.forEach(function (item, i, arr) {
+		if (i == pointForReflect) {
 			console.log('321');
 			spanPlus.textContent = item;
 		}
 	})
-	b3.forEach(function (item, i, arr) {
-		if (i == b) {
+	reflectMinus.forEach(function (item, i, arr) {
+		if (i == pointForReflect) {
 			console.log('321');
 			spanMinus.textContent = item;
 		}
 	})
+	reflectRework.forEach(function (item, i, arr) {
+		if (i == pointForReflect) {
+			reworkSpan.textContent = item;
+		}
+	})
 };
-
+// всем необход элемен задать id или data attribut получуть все эти элементы 
 
 // ===========================================================================
 
