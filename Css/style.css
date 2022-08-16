@@ -865,6 +865,196 @@ main .right-side .inner h2{
 .wrapper-f__plus-span.active{
 	max-height: 100%;
 }
+.wrapper-f__minus-span{
+	max-height: 0;
+	overflow: hidden;
+}
+.wrapper-f__minus-span.active{
+	max-height: 100%;
+}
+.wrapper-f__rework-span{
+	max-height: 0;
+	overflow: hidden;
+}
+.wrapper-f__rework-span.active{
+	max-height: 100%;
+}
+.wrapper-f__retual-span{
+	max-height: 0;
+	overflow: hidden;
+}
+.wrapper-f__retual-span.active{
+	max-height: 100%;
+}
+.overlay-g-span{
+	max-height: 0;
+	overflow: hidden;
+}
+.overlay-g-span.active{
+	max-height: 100%;
+}
+.wrapper-g__about-span{
+	max-height: 0;
+	overflow: hidden;
+}
+.wrapper-g__about-span.active{
+	max-height: 100%;
+}
+.wrapper-g__plus-span{
+	max-height: 0;
+	overflow: hidden;
+}
+.wrapper-g__plus-span.active{
+	max-height: 100%;
+}
+.wrapper-g__minus-span{
+	max-height: 0;
+	overflow: hidden;
+}
+.wrapper-g__minus-span.active{
+	max-height: 100%;
+}
+.wrapper-g__rework-span{
+	max-height: 0;
+	overflow: hidden;
+}
+.wrapper-g__rework-span.active{
+	max-height: 100%;
+}
+.wrapper-g__retual-span.active{
+	max-height: 0;
+	overflow: hidden;
+}
+.wrapper-g__retual-span.active{
+	max-height: 100%;
+}
+.overlay-v-span{
+	max-height: 0;
+	overflow: hidden;
+}
+.overlay-v-span.active{
+	max-height: 100%;
+}
+.wrapper-v__about-span{
+	max-height: 0;
+	overflow: hidden;
+}
+.wrapper-v__about-span.active{
+	max-height: 100%;
+}
+.wrapper-v__plus-span{
+	max-height: 0;
+	overflow: hidden;
+}
+.wrapper-v__plus-span.active{
+	max-height: 100%;
+}
+.wrapper-v__minus-span{
+	max-height: 0;
+	overflow: hidden;
+}
+.wrapper-v__minus-span.active{
+	max-height: 100%;
+}
+.wrapper-v__rework-span{
+	max-height: 0;
+	overflow: hidden;
+}
+.wrapper-v__rework-span.active{
+	max-height: 100%;
+}
+.wrapper-v__retual-span{
+	max-height: 0;
+	overflow: hidden;
+}
+.wrapper-v__retual-span.active{
+	max-height: 100%;
+}
+.overlay-w-span{
+	max-height: 0;
+	overflow: hidden;
+}
+.overlay-w-span.active{
+	max-height: 100%;
+}
+.wrapper-w__about-span{
+	max-height: 0;
+	overflow: hidden;
+}
+.wrapper-w__about-span.active{
+	max-height: 100%;
+}
+.wrapper-w__rework-span{
+	max-height: 0;
+	overflow: hidden;
+}
+.wrapper-w__rework-span.active{
+	max-height: 100%;
+}
+.wrapper-w__retual-span{
+	max-height: 0;
+	overflow: hidden;
+}
+.wrapper-w__retual-span.active{
+	max-height: 100%;
+}
+.overlay-x-span{
+	max-height: 0;
+	overflow: hidden;
+}
+.overlay-x-span.active{
+	max-height: 100%;
+}
+.wrapper-x__about-span{
+	max-height: 0;
+	overflow: hidden;
+}
+.wrapper-x__about-span.active{
+	max-height: 100%;
+}
+.wrapper-x__rework-span{
+	max-height: 0;
+	overflow: hidden;
+}
+.wrapper-x__rework-span.active{
+	max-height: 100%;
+}
+.wrapper-x__retual-span{
+	max-height: 0;
+	overflow: hidden;
+}
+.wrapper-x__retual-span.active{
+	max-height: 100%;
+}
+.overlay-z-span{
+	max-height: 0;
+	overflow: hidden;
+}
+.overlay-z-span.active{
+	max-height: 100%;
+}
+.wrapper-z__about-span{
+	max-height: 0;
+	overflow: hidden;
+}
+.wrapper-z__about-span.active{
+	max-height: 100%;
+}
+.wrapper-z__rework-span{
+	max-height: 0;
+	overflow: hidden;
+}
+.wrapper-z__rework-span.active{
+	max-height: 100%;
+}
+.wrapper-z__retual-span{
+	max-height: 0;
+	overflow: hidden;
+}
+.wrapper-z__retual-span.active{
+	max-height: 100%;
+}
+
 
 
 

@@ -148,15 +148,15 @@ const asd = async () => {
 	const req = await fetch('./exmple.json');
 	console.log(req);
 	const res = await req.json();
-	let b1 = res['arcane-main'];
+	let reflectOne = res['arcane-main'];
 	let b2 = res['plus'];
 	let b3 = res['minus'];
-	let b = +p4.innerHTML;
-	b1.forEach(function (item, i, arr) {
-		if (i == b) {
+	let pointForReflect = +p4.innerHTML;
+	reflectOne.forEach(function (item, i, arr) {
+		if (i == pointForReflect) {
 			console.log('123');
 			aboutArc.textContent = item;
-			numm.textContent = b;
+			numm.textContent = pointForReflect;
 		}
 	});
 	b2.forEach(function (item, i, arr) {
