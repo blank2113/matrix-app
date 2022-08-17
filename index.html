@@ -1,18 +1,295 @@
-<!doctype html>
-<html>
-	<head>
-		<meta charset="utf-8">
-		<title>Electron boilerplate</title>
-		<link rel="stylesheet" href="index.css">
-	</head>
-	<body>
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="./css/style.css">
+	<title></title>
+</head>
+
+<body>
+	<div class="wrapper">
 		<div class="container">
-			<header>
-				<h1>Electron boilerp</h1>
-				<p></p>
-			</header>
-			<section class="main"></section>
-			<footer></footer>
+			<aside>
+				<div class="navbar">
+					<div class="wrapper-inner">
+						<label for="day">
+							День:
+							<input class="day" type="text" maxlength="2" min="0" max="2">
+						</label>
+					</div>
+					<div class="wrapper-inner">
+						<label for="month">
+							Месяц:
+							<input class="month" type="text" maxlength="2">
+						</label>
+					</div>
+					<div class="wrapper-inner">
+						<label for="years">
+							Год:
+							<input class="years" type="text" maxlength="4">
+						</label>
+					</div>
+					<div class="wrapper-inner">
+						<label for="sub">
+							<input class="sub" type="submit" value="Расчитать">
+						</label>
+					</div>
+				</div>
+			</aside>
+			<main>
+				<div class="main-content">
+					<div class="main-content__inner">
+						<div class="left-side">
+							<div class="inner">
+								<span id="1" class="point-1"></span>
+								<span id="2" class="point-2"></span>
+								<span id="3" class="point-3"></span>
+								<span id="4" class="point-4"></span>
+								<span id="5" class="point-5"></span>
+								<span id="6" class="point-6"></span>
+								<span id="7" class="point-7"></span>
+								<span id="8" class="point-8"></span>
+								<span id="9" class="point-9"></span>
+								<span id="10" class="point-10"></span>
+								<span id="11" class="point-11"></span>
+								<span id="12" class="point-12"></span>
+								<span id="13" class="point-13"></span>
+								<span id="14" class="point-14"></span>
+								<span id="15" class="point-15"></span>
+								<span id="16" class="point-16"></span>
+								<span id="17" class="point-17"></span>
+								<span id="18" class="point-18"></span>
+								<span id="19" class="point-19"></span>
+								<span id="20" class="point-20"></span>
+								<span id="21" class="point-21"></span>
+							</div>
+							<div class="destination">
+								<span id="22" class="pnt-1"></span>
+								<span id="23" class="pnt-2"></span>
+								<span id="24" class="pnt-3"></span>
+								<span id="25" class="pnt-4"></span>
+								<span id="26" class="pnt-5"></span>
+								<span id="27" class="pnt-6"></span>
+								<span id="28" class="pnt-7"></span>
+							</div>
+						</div>
+						<div class="right-side">
+							<div class="right-side__inner">
+								<div class="down">
+									<h2 class="down-title">Базовый уровень</h2>
+									<div class="main-wrapper">
+										<div class="wrapper-a">
+											<div data-related-number="4">
+												<h3 class="overlay__title">Первостепенная задача <span data-text="arcane-number"
+														class="numb"></span></h3>
+												<div class="overlay__span">Хвостик это травмы человека: там
+													сексуальность/первостепенная задача/травма человека-именно хвостик отвечает за то
+													что будет у человека партнер или нет? Отвечает за то что будет человек
+													зарабатывать или нет(когда хвост в истощенном состоянии финансы и отношения несут
+													кармический характер!!! Работа и партнер приходят кармические- не по задачам а по
+													травме/хвосту!!!)
+													Так же не будет энергии для жизни если хвост не проработан!!!
+													самая базовая потребность человека по Маслоу/нижняя чакра
+													которую надо решить и реализовать.</div>
+												<h3 class="about-arcane">Описание</h3>
+												<div data-text="arcane-about" class="about-span"></div>
+												<h3 class="plus">+</h3>
+												<div data-text="arcane-plus" class="plus-span"></div>
+												<h3 class="minus">-</h3>
+												<div data-text="arcane-minus" class="minus-span"></div>
+												<h3 class="rework-title">Проработка</h3>
+												<div data-text="arcane-rework" class="rework-span"></div>
+												<h3 class="retual-title">Ритуалы</h3>
+												<div data-text="arcane-retual" class="retual-span"></div>
+											</div>
+										</div>
+										<div class="wrapper-b">
+											<div data-related-number="11">
+												<h3 class="overlay__title">Травма <span data-text="arcane-number"
+														class="numb"></span></h3>
+												<div class="overlay-span"></div>
+												<h3 class="about-arcane">Описание</h3>
+												<div data-text="arcane-injury" class="about-span"></div>
+												<h3 class="plus">+</h3>
+												<div data-text="arcane-plus" class="plus-span"></div>
+												<h3 class="minus">-</h3>
+												<div data-text="arcane-minus" class="minus-span"></div>
+												<h3 class="rework-title">Проработка</h3>
+												<div data-text="arcane-rework" class="rework-span"></div>
+												<h3 class="retual-title">Ритуалы</h3>
+												<div data-text="arcane-retual" class="retual-span"></div>
+											</div>
+										</div>
+										<div class="wrapper-c">
+											<div data-related-number="10">
+												<h3 class="overlay__title">Сексуальность <span data-text="arcane-number"
+														class="numb"></span></h3>
+												<div class="overlay-span"></div>
+												<h3 class="about-arcane">Описание</h3>
+												<div data-text="arcane-sexuality" class="about-span"></div>
+												<h3 class="plus">+</h3>
+												<div data-text="arcane-plus" class="plus-span"></div>
+												<h3 class="minus">-</h3>
+												<div data-text="arcane-minus" class="minus-span"></div>
+												<h3 class="rework-title">Проработка</h3>
+												<div data-text="arcane-rework" class="rework-span"></div>
+												<h3 class="retual-title">Ритуалы</h3>
+												<div data-text="arcane-retual" class="retual-span"></div>
+											</div>
+										</div>
+
+										<div class="wrapper-d">
+											<div data-related-number="16">
+												<h3 class="overlay__title">Отношения <span data-text="arcane-number"
+														class="numb"></span></h3>
+												<div class="overlay-span"></div>
+												<h3 class="about-arcane">Описание</h3>
+												<div data-text="arcane-relationship" class="about-span"></div>
+												<h3 class="plus">+</h3>
+												<div data-text="arcane-plus" class="plus-span"></div>
+												<h3 class="minus">-</h3>
+												<div data-text="arcane-minus" class="minus-span"></div>
+												<h3 class="rework-title">Проработка</h3>
+												<div data-text="arcane-rework" class="rework-span"></div>
+												<h3 class="retual-title">Ритуалы</h3>
+												<div data-text="arcane-retual" class="retual-span"></div>
+											</div>
+										</div>
+										<div class="wrapper-e">
+											<div data-related-number="15">
+												<h3 class="overlay__title">Деньги в Отношениях <span data-text="arcane-number"
+														class="numb"></span></h3>
+												<div class="overlay-span"></div>
+												<h3 class="about-arcane">Описание</h3>
+												<div data-text="arcane-finance-in-relationship" class="about-span"></div>
+												<h3 class="plus">+</h3>
+												<div data-text="arcane-plus" class="plus-span"></div>
+												<h3 class="minus">-</h3>
+												<div data-text="arcane-minus" class="minus-span"></div>
+												<h3 class="rework-title">Проработка</h3>
+												<div data-text="arcane-rework" class="rework-span"></div>
+												<h3 class="retual-title">Ритуалы</h3>
+												<div data-text="arcane-retual" class="retual-span"></div>
+											</div>
+										</div>
+										<div class="wrapper-f">
+											<div data-related-number="17">
+												<h3 class="overlay__title">Деньги <span data-text="arcane-number"
+														class="numb"></span></h3>
+												<div class="overlay-span"></div>
+												<h3 class="about-arcane">Описание</h3>
+												<div data-text="arcane-finance" class="about-span"></div>
+												<h3 class="plus">+</h3>
+												<div data-text="arcane-plus" class="plus-span"></div>
+												<h3 class="minus">-</h3>
+												<div data-text="arcane-minus" class="minus-span"></div>
+												<h3 class="rework-title">Проработка</h3>
+												<div data-text="arcane-rework" class="rework-span"></div>
+												<h3 class="retual-title">Ритуалы</h3>
+												<div data-text="arcane-retual" class="retual-span"></div>
+											</div>
+										</div>
+										<div class="wrapper-g">
+											<div data-related-number="5">
+												<h3 class="overlay__title">Сила человека <span data-text="arcane-number"
+														class="numb"></span></h3>
+												<div class="overlay-span"></div>
+												<h3 class="about-arcane">Описание</h3>
+												<div data-text="arcane-human-power" class="about-span"></div>
+												<h3 class="plus">+</h3>
+												<div data-text="arcane-plus" class="plus-span"></div>
+												<h3 class="minus">-</h3>
+												<div data-text="arcane-minus" class="minus-span"></div>
+												<h3 class="rework-title">Проработка</h3>
+												<div data-text="arcane-rework" class="rework-span"></div>
+												<h3 class="retual-title">Ритуалы</h3>
+												<div data-text="arcane-retual" class="retual-span"></div>
+											</div>
+										</div>
+										<div class="wrapper-v">
+											<div data-related-number="1">
+												<h3 class="overlay__title">Визитка <span data-text="arcane-number"
+														class="numb"></span></h3>
+												<div class="overlay-span"></div>
+												<h3 class="about-arcane">Описание</h3>
+												<div data-text="arcane-card" class="about-span"></div>
+												<h3 class="plus">+</h3>
+												<div data-text="arcane-plus" class="plus-span"></div>
+												<h3 class="minus">-</h3>
+												<div data-text="arcane-minus" class="minus-span"></div>
+												<h3 class="rework-title">Проработка</h3>
+												<div data-text="arcane-rework" class="rework-span"></div>
+												<h3 class="retual-title">Ритуалы</h3>
+												<div data-text="arcane-retual" class="retual-span"></div>
+											</div>
+										</div>
+										<div class="wrapper-w">
+											<div data-related-number="24">
+												<h3 class="overlay__title">Первое предназначение <span data-text="arcane-number"
+														class="numb"></span></h3>
+												<div class="overlay-span"></div>
+												<h3 class="about-arcane">Описание</h3>
+												<div data-text="arcane-first" class="about-span"></div>
+												<h3 class="plus" lang="p">+</h3>
+												<div data-text="arcane-plus" class="plus-span" lang="p"></div>
+												<h3 class="minus" lang="p">-</h3>
+												<div data-text="arcane-minus" class="minus-span" lang="p"></div>
+												<h3 class="rework-title">Проработка</h3>
+												<div data-text="arcane-rework" class="rework-span"></div>
+												<h3 class="retual-title">Ритуалы</h3>
+												<div data-text="arcane-retual" class="retual-span"></div>
+											</div>
+										</div>
+										<div class="wrapper-x">
+											<div data-related-number="27">
+												<h3 class="overlay__title">Второе предназначение <span data-text="arcane-number"
+														class="numb"></span></h3>
+												<div class="overlay-span"></div>
+												<h3 class="arcane-second">Описание</h3>
+												<div data-text="arcane-card" class="about-span"></div>
+												<h3 class="plus" lang="p">+</h3>
+												<div data-text="arcane-plus" class="plus-span" lang="p"></div>
+												<h3 class="minus" lang="p">-</h3>
+												<div data-text="arcane-minus" class="minus-span" lang="p"></div>
+												<h3 class="rework-title">Проработка</h3>
+												<div data-text="arcane-rework" class="rework-span"></div>
+												<h3 class="retual-title">Ритуалы</h3>
+												<div data-text="arcane-retual" class="retual-span"></div>
+											</div>
+										</div>
+										<div class="wrapper-z">
+											<div data-related-number="28">
+												<h3 class="overlay__title">Общее предназначение <span data-text="arcane-number"
+														class="numb"></span></h3>
+												<div class="overlay-span"></div>
+												<h3 class="about-arcane">Описание</h3>
+												<div data-text="arcane-overall" class="about-span"></div>
+												<h3 class="plus" lang="p">+</h3>
+												<div data-text="arcane-plus" class="plus-span" lang="p"></div>
+												<h3 class="minus" lang="p">-</h3>
+												<div data-text="arcane-minus" class="minus-span" lang="p"></div>
+												<h3 class="rework-title">Проработка</h3>
+												<div data-text="arcane-rework" class="rework-span"></div>
+												<h3 class="retual-title">Ритуалы</h3>
+												<div data-text="arcane-retual" class="retual-span"></div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</main>
+
+			<script src="./Js/function.js"></script>
 		</div>
-	</body>
+	</div>
+
+
+
+</body>
+
 </html>
