@@ -10,8 +10,8 @@ const pnts = document.querySelectorAll('[class*=pnt]');
 
 
 const DATA = {
-	one: [2, 4], two: [1, 3], four: [6, 8], five: [7, 9],
-	three: ["one", "two"], six: ["four", "five"], seven: ["three", "six"],
+	22: [2, 4], 23: [1, 3], 25: [6, 8], 26: [7, 9],
+	24: [22, 23], 27: [25, 26], 28: [24, 27],
 	// 1: [4, 5], 2: [4, 10], 3: [2, 5], 4: [2, 12], 5: [2, 12], 
 	6: [1, 2], 7: [2, 3], 8: [3, 4], 9: [1, 4],
 	10: [4, 5], 11: [4, 10], 12: [2, 5], 13: [2, 12],
@@ -117,107 +117,44 @@ function insideCalc() {
 // add listener for submit
 
 document.querySelector('.sub').addEventListener('click', () => {
-	// getDataJson();
 	document.querySelector('.down-title').classList.toggle('active');
-	// asd();
 	setDatasInPosition()
 	calc();
 	insideCalc();
 	destCalc();
-	text();
 });
 
-// const getDataJson = async () => {
-// 	try {
-// 		const req = await fetch('./exmple.json');
-// 		console.log(req);
-// 		const res = await req.json();
-// 		console.log(res['mainpurpose']);
-// 		return res;
-// 	} catch (error) {
-// 		console.log(error);
-// 		alert("Сори все хуйня");
-// 		return null;
-// 	}
-// };
-
-// const dataJson = getDataJson();
-
-const aboutArc = document.querySelector('.about-span');
-const numm = document.querySelector('.numb');
-const spanPlus = document.querySelector('.plus-span');
-const spanMinus = document.querySelector('.minus-span');
-const reworkSpan = document.querySelector('.rework-span');
-const retualSpan = document.querySelector('.retual-span');
-
-const asd = async () => {
-	const req = await fetch('./exmple.json');
-	console.log(req);
-	const res = await req.json();
-	let reflectAbout = res['arcane-about'];
-	let reflectPlus = res['plus'];
-	let reflectMinus = res['minus'];
-	let reflectRework = res['arcane-rework'];
-	let pointForReflect = +p4.innerHTML;
-	reflectAbout.forEach(function (item, i, arr) {
-		if (i == pointForReflect) {
-			console.log('123');
-			aboutArc.textContent = item;
-			numm.textContent = pointForReflect;
-		}
-	});
-	reflectPlus.forEach(function (item, i, arr) {
-		if (i == pointForReflect) {
-			console.log('321');
-			spanPlus.textContent = item;
-		}
-	})
-	reflectMinus.forEach(function (item, i, arr) {
-		if (i == pointForReflect) {
-			console.log('321');
-			spanMinus.textContent = item;
-		}
-	})
-	reflectRework.forEach(function (item, i, arr) {
-		if (i == pointForReflect) {
-			reworkSpan.textContent = item;
-		}
-	})
-};
-// всем необход элемен задать id или data attribut получуть все эти элементы 
-
-// ===========================================================================
 
 
-
-document.addEventListener("click", function (e) {
+document.querySelector('.right-side').addEventListener("click", function (e) {
 	e.target.classList.toggle('active');
-	let nextS = e.target.nextElementSibling;
-	nextS.classList.toggle('active');
+	e.target.nextElementSibling.classList.toggle('active');
+
 });
-
-
-
-
-//  =======================================================================================
 
 
 async function setDatasInPosition() {
 	const req = await fetch('./exmple.json');
 	console.log(req);
 	const res = await req.json();
-	
+
 	const nodes = document.querySelectorAll("[data-related-number]");
 	nodes.forEach(node => {
 		const nodeRelatedNumber = node.dataset.relatedNumber;
 		const relatedNumberElement = document.getElementById(nodeRelatedNumber)
 		const mainContent = node.querySelector(".about-span");
-		// const plusContent = node.querySelector("");
-		// const minusContent = node.querySelector("");
-		// const reworkContent = node.querySelector("");
-		// const ritualContent = node.querySelector("");
+		const plusContent = node.querySelector(".plus-span");
+		const minusContent = node.querySelector(".minus-span");
+		const reworkContent = node.querySelector(".rework-span");
+		const ritualContent = node.querySelector(".retual-span");
+		const numberAsr = node.querySelector(".numb");
 
 		mainContent.textContent = res[mainContent.dataset.text][+relatedNumberElement.textContent];
-
+		plusContent.textContent = res[plusContent.dataset.text][+relatedNumberElement.textContent];
+		minusContent.textContent = res[minusContent.dataset.text][+relatedNumberElement.textContent];
+		reworkContent.textContent = res[reworkContent.dataset.text][+relatedNumberElement.textContent];
+		ritualContent.textContent = res[ritualContent.dataset.text][+relatedNumberElement.textContent];
+		numberAsr.textContent = res[numberAsr.dataset.text][+relatedNumberElement.textContent];
 	})
-}
+};
+
